@@ -1,0 +1,30 @@
+POST http://localhost:8080/api/films HTTP/1.1
+Content-Type: application/json
+
+{
+        "filmName":"Vikram1",
+        "directorName":"Karthik1"
+
+}
+###
+
+GET  http://localhost:8080/api/films HTTP/1.1
+Content-Type:application/json
+
+###
+GET  http://localhost:8080/api/films/6 HTTP/1.1
+Content-Type:application/json
+
+###
+PUT http://localhost:8080/api/films/7 HTTP/1.1
+Content-Type:application/json
+
+{
+        "filmName":"Bahubali",
+        "directorName":"Rajamouli"
+}
+
+###
+
+DELETE http://localhost:8080/api/films/6 HTTP/1.1
+Content-Type:application/json
